@@ -1,0 +1,91 @@
+@media(max-width:1300px){
+  .video-box {
+    width:80%;
+    margin-left: 110px;
+  }
+
+  .zainu-on{
+    width: 100%;
+  }
+
+  .live-chat {
+    width: 85%;
+  }
+
+    .mentor-profile {
+      width: 273px;
+      
+    }
+
+
+    .mentor-profile div p{
+      width: 150px;
+      font-size: 18px;
+      margin-right: 5px;
+    
+    }
+
+    .mentor-profile div p span{
+      font-size: 14px;
+    }
+
+}
+
+@media(max-width:920px){
+  .head-text p{
+  font-size: 25px;
+  }
+  .video-box {
+  margin: 0 auto;
+  width: 90%;
+  height:350px ;
+  }
+
+  .live-box {
+  width: 100%;
+  height:350px ;
+  }
+
+  .zainu-on{
+  width: 100%;
+  height:350px ;
+  }
+
+  .live-chat {
+  width: 90%;
+  margin: 0 auto;
+  }
+
+  .end-chat{
+  margin-top: 1px;
+  }
+}
+
+@media(max-width:500px){
+  .video-box {
+  margin: 0 auto;
+  height:240px ;
+  }
+
+  .live-box {
+  height:240px ;
+  }
+
+  .zainu-on{
+
+  height:240px ;
+  }
+  .mentor-profile {
+    width: 220px;
+    margin-top: -70px;
+  }
+  .mentor-profile div p{
+    width: 140px;
+    font-size: 15px;
+  }  
+
+  .mentor-profile p span{
+    font-size: 12px;
+  }
+}
+
