@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>individual counselling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #FFF0C8;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            height: 85px;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #477a25;
+        }
+        nav a {
+            transition: all 0.15s;
+        }
+
+        nav a:hover {
+            color: #0D8241;
+            transform: scale(1.1);
+            font-weight: 500;
+        }
+
+        header nav {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header nav a {
+            margin-left: 20px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-family: Montserrat, sans-serif;
+            font-weight: 400;
+        }
+
+        .a-main {
+            width: 100%;
+            background-color: #FFF0C8;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            padding-left: 250px;
+        }
+
+        .vertical-line {
+            width: 0;
+            height: 150px;
+            border-left: 2px solid black;
+            margin: 20px 0;
+        }
+
+        .text {
+            max-width: 875px;
+            padding-left: 41px;
+            text-align: left;
+        }
+
+        .heading {
+            color: #0D8241;
+            font-size: 40px;
+            font-family: 'Abril Fatface';
+        }
+
+        .paragraph {
+            color: #0D8241;
+            margin-top: 10px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 300;
+        }
+
+        .b-main {
+            width: 100%;
+            height: 495px;
+            background-color: #FFF7E3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .video-box {
+            width: 40%;
+            height: 371px;
+            background-color: transparent;
+            border-radius: 15px;
+            border: 2px solid #0D8241;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+            /* Maintains the aspect ratio */
+        }
+
+        .logo-image {
+            height: 100px;
+            width: auto;
+            padding-left: 45px;
+        }
+
+        .table-container {
+            margin: 20px auto;
+            width: 80%;
+            position: absolute;
+            top: 1100px;
+            left: 140px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1px solid #000;
+            /* Outer border */
+            border-radius: 10px;
+            /* Rounded corners */
+            background-color: #fff;
+        }
+
+        th,
+        td {
+            text-align: center;
+            padding: 15px;
+            border: 1px solid #000;
+            /* Inner borders */
+            font-size: 14px;
+        }
+
+        th {
+            font-weight: bold;
+            background-color: #fef9e7;
+            /* Light cream background for header */
+        }
+
+        /* Rounded corners */
+        table tr:first-child th:first-child {
+            border-top-left-radius: 10px;
+        }
+
+        table tr:first-child th:last-child {
+            border-top-right-radius: 10px;
+        }
+
+        table tr:last-child td:first-child {
+            border-bottom-left-radius: 10px;
+        }
+
+        table tr:last-child td:last-child {
+            border-bottom-right-radius: 10px;
+        }
+        .footer {
+            height: 470px;
+            width: 100%;
+            background-color: #41391D;
+            margin-top: 0px;
+            position: relative;
+            top: 2830px;
+        }
+
+        .subscription {
+            position: absolute;
+            top: 180px;
+            right: 120px;
+            background-color: #685E37;
+            width: 304px;
+            height: 184px;
+            border-radius: 7px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 10px;
+            }
+
+            .heading {
+                font-size: 32px;
+            }
+
+            .paragraph {
+                font-size: 16px;
+            }
+
+            .video-box {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px 20px;
+            }
+
+            header .logo {
+                font-size: 20px;
+            }
+
+            header nav a {
+                font-size: 14px;
+            }
+
+            .heading {
+                font-size: 24px;
+            }
+
+            .paragraph {
+                font-size: 14px;
+            }
+
+            .vertical-line {
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: #FFF7E3;">
+    <header>
+        <div style="background-color: #FFF0C8;" class="logo-image"><img src="logo.png" alt=""></div>
+        <nav>
+            <a href="https://homefresko.netlify.app/">Home</a>
+                <a href="https://aboutfresko.netlify.app/">About us</a>
+                <a href="https://servicefresko.netlify.app/">Services</a>
+                <a href="https://contactfresko.netlify.app/">Contact us</a>
+        </nav>
+    </header>
+    <section>
+        <div class="a-main">
+            <div class="vertical-line"></div>
+            <div class="text">
+                <h1 class="heading">Service Details</h1>
+                <p class="paragraph">
+                    Our Services Provide Personalized Guidance And Faith-Based Solutions To Address Challenges Like
+                    <br>Addiction, Mental Health Struggles, And Identity Conflicts. Through Mentoring, Live Classes, And
+                    Problem <br> Assessments, We Empower Individuals To Heal, Grow, And Reconnect With Their Purpose.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="b-main">
+            <div class="video-box">
+                <video controls loop autoplay style="width: 100%;
+                object-fit: cover;
+            height: 100%;" src="proposal.MOV"></video>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #FFF7E3;">
+        <div style="position: relative;">
+            <p style="font-family: manrope;
+            font-weight: 700;
+            font-size: 36px;
+            position: absolute;
+            top: -30px;
+            left: 156px;
+            color: #0D8241;">individual <br>
+                counselling</p>
+            <p style="font-family: montserrat;
+            font-weight: 500;
+            font-size: 17px;
+            position: absolute;
+            top: -30px;
+            left: 700px;
+            color: #0D8241;">"I was lost in a cycle of addiction and confusion, but Fresko helped me find my <br> way back.
+                The personalized mentoring and faith-based solutions gave me the <br> strength to overcome my struggles and
+                reconnect with my purpose. I’m now <br> living a life of peace and clarity, thanks to the guidance I
+                received here."</p>
+            <p style="font-family: montserrat;
+            font-weight: 600;
+            font-size: 24px;
+            position: absolute;
+            top: 125px;
+            left: 630px;
+            color: #0D8241;">individual counselling method</p>
+            <div style="width: 496px;
+            height: 290px;
+            overflow: hidden;
+            border: solid 2px;
+            position: absolute;
+            top: 250px;
+            left: 310px;
+            border-radius: 20px;">
+            <img style="width: 496px;
+            height: 290px;" src="mentoring-method.png" alt="">
+            </div>
+            <div style="width: 496px;
+            height: 290px;
+            overflow: hidden;
+            border: solid 2px;
+            position: absolute;
+            top: 540px;
+            left: 800px;
+            border-radius: 20px;">
+            <img style="width: 496px;
+            object-fit: cover;
+            height: 290px;" src="mentoring-method1.jpeg" alt="">
+            </div>
+            
+            <br>
+            <div style="height: 800px;
+  width: 60%;
+  box-shadow: 1px 10px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  left: 280px;
+  top: 900px;
+  ">
+    <div style="top: 70px;
+    left: 25px;
+    position: relative;">
+      <p style="top: -50px;
+      position: absolute;
+      font-weight: 600;
+      font-family: montserrat;
+      left: 220px;
+      margin-top: 10px;
+      font-size: 40px;">Counselling Booking</p>
+      <div style="position: absolute;
+            left: 100px;
+            top: 50px;
+            display: inline-block;">
+        <label style="color: #000000;
+                width: 225px;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: #FFF7E3;
+                 font-family: fira sans;
+                font-size: 18px;
+                display: inline-block;
+                border: none;" for="category">Categories</label>
+        <br>
+        <select style="color: #000000;
+                width: 660px;
+                border: solid 1px;
+                border-color: #000000;
+                background-color: #fff;
+                font-family: fira sans;
+                font-size: 16px;
+                border-radius: 10px;
+                padding: 10px;
+                display: inline-block;
+                " id="category" name="fruits">
+          <option value="Select one">Select category</option>
+          <option value="Anxiety">Anxiety</option>
+          <option value="Depression">Depression</option>
+          <option value="Addictions">Addictions</option>
+        </select>
+
+      </div>
+      <div style="position: absolute;
+                left: 100px; 
+                top: 150px;          
+                display: inline-block;">
+        <label style="color: #000000;
+                width: 225px;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: #FFF7E3;
+                font-family: fira sans;
+                font-size: 18px;
+                display: inline-block;
+                border: none;" for="mentor">Select your mentor</label>
+        <br>
+        <select style="color: #000000;
+                width: 660px;
+                border: solid 1px;
+                border-color: #000000;
+                background-color: #fff;
+                font-family: fira sans;
+                font-size: 16px;
+                border-radius: 10px;
+                padding: 10px;
+                display: inline-block;
+                " id="mentor" name="mentors">
+          <option value="Select one">Select one</option>
+          <option value="Fawas Hudawi">Fawas Hudawi</option>
+          <option value="Shuaib Hudawi">Shuaib Hudawi</option>
+          <option value="Zainul abid">Zainul abid</option>
+          <option value="Salam Hudawi">Salam Hudawi</option>
+          <option value="Rashad Hudawi">Rashad Hudawi</option>
+          <option value="Jaleel Hudawi">Jaleel Hudawi</option>
+          <option value="Farooq Hudawi">Farooq Hudawi</option>
+          <option value="Iqbal Hudawi">Iqbal Hudawi</option>
+          <option value="Shafeeq Hudawi">Shafeeq Hudawi</option>
+          <option value="Habeebulla Faizy">Habeebulla Faizy</option>
+          <option value="Swalih Hudawi">Swalih Hudawi</option>
+          <option value="Misfer Wafy">Misfer Wafy</option>
+        </select>
+
+      </div>
+      <div style="position: absolute;
+            left: 100px;
+            top: 250px;
+            display: inline-block;">
+        <label style="color: #000000;
+                width: 225px;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: #FFF7E3;
+                 font-family: fira sans;
+                font-size: 18px;
+                display: inline-block;
+                border: none;" for="category">Email</label>
+        <br>
+        <input style="color: #000000;
+                    width: 640px;
+                    border: solid 1px;
+                    border-color: #000000;
+                    background-color: #fff;
+                    font-family: fira sans;
+                    font-size: 16px;
+                    border-radius: 10px;
+                    padding: 10px;
+                    display: inline-block;
+                    " type="email" id="email" name="email" required>
+
+      </div>
+
+      <div style="position: absolute;
+                left: 100px; 
+                top: 350px; 
+                display: inline-block;">
+        <form action="/submit-dob" method="POST">
+          <label style="color: #000000;
+                    width: 225px;
+                    padding: 10px;
+                    border-radius: 10px;
+                    background-color: #FFF7E3;
+                    font-family: fira sans;
+                    font-size: 18px;
+                    display: inline-block;
+                    border: none;" for="date">Date of Birth:</label>
+          <br>
+          <input style="color: #000000;
+                    width: 640px;
+                    border: solid 1px;
+                    border-color: #000000;
+                    background-color: #fff;
+                    font-family: fira sans;
+                    font-size: 16px;
+                    border-radius: 10px;
+                    padding: 10px;
+                    display: inline-block;
+                    " type="date" id="date" name="dob" required>
+      </div>
+      <div style="position: absolute;
+            left: 100px;
+            top: 450px;
+            display: inline-block;">
+        <label style="color: #000000;
+                width: 225px;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: #FFF7E3;
+                font-family: fira sans;
+                font-size: 18px;
+                display: inline-block;
+                border: none;" for="time">Select a time for you</label>
+        <br>
+        <select style="color: #000000;
+                width: 660px;
+                border: solid 1px;
+                border-color: #000000;
+                background-color: #fff;
+                font-family: fira sans;
+                font-size: 16px;
+                border-radius: 10px;
+                padding: 10px;
+                display: inline-block;
+                " id="time" name="fruits">
+          <option value="Select one">Select one</option>
+          <option value="6:00 AM to 8:00 AM">6:00 AM to 8:00 AM</option>
+          <option value="8:00 PM to 10:00 PM">8:00 PM to 10:00 PM</option>
+          <option value="2:00 AM to 4:00 AM">2:00 AM to 4:00 AM</option>
+        </select>
+
+      </div>
+      <button class="button" style="position: absolute;
+            font-family: poppins;
+            right: 140px;
+            top: 550px;
+            height: 45px;
+            width: 660px;
+            color: #ffffff;
+            border: solid 1px;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 15px;
+            background-color: #00c85d;" onclick="addToTable()">Book Session</button>
+      
+        
+    </div>
+
+  </div>
+            <div class="sinanshah-container" style="height: 100vh;
+                        width: 100%; 
+                        position: absolute;
+                        top: 1820px;">
+                <img style="z-index: -1;
+                width: 100%;" src="ustmask.png" alt="">
+                <button style="position: absolute;
+                font-family: montserrat;
+                right: 657px;
+                top: 545px;
+                height: 68px;
+                width: 234px;
+                color: #fff;
+                border: none;
+                border-radius: 34px;
+                font-weight: 500;
+                font-size: 22px;
+                background-color: #15897E;">View Mentors</button>
+                <div>
+                    <p style="font-family: montserrat;
+                    font-weight: 500;
+                    font-size: 22px;
+                    position: absolute;
+                    color: #0D8241;
+                    left: 200px;">Testimonials</p>
+                    <p style="font-family: montserrat;
+                    font-weight: 700;
+                    font-size: 27px;
+                    position: absolute;
+                    color: #0D8241;
+                    left: 190px;
+                    top: 1092px;">"This platform has <br> transformed my life, <br> guiding me with faith and <br> wisdom
+                        to
+                        overcome my <br> struggles and find peace."</p>
+                </div>
+                <div>
+                    <div style="height: 355px;
+                    width: 290px;
+                    background-color: #15897E;
+                    position: absolute;
+                    right: 500px;
+                    border-radius: 32px;
+                    border: solid 2px;">
+                        <div style="display: inline-block;
+                            width: 55px;
+                            height: 55px;
+                            margin-top: 20px;
+                            margin-left: 30px;
+                            border-radius: 50%;
+                            overflow: hidden;">
+                            <img style="  height: 100%;  
+                            object-fit: cover;
+                            width: 100%;
+                            object-position: center;" src="ezmyl.JPG" alt="">
+                        </div>
+                        <p style="font-family: montserrat;
+                            font-weight: 600;
+                            font-size: 20px;
+                            position: absolute;
+                            left: 100px;
+                            top: 30px;
+                            background: transparent;">Ezmyl Franco</p>
+                        <p style="font-family: montserrat;
+                            font-weight: 500;
+                            font-size: 10px;
+                            position: absolute;
+                            left: 95px;
+                            top: 50px;
+                            background: transparent;">Lecturer, University of Morocco</p>
+                        <p style="font-family: montserrat;
+                            font-weight: 400;
+                            font-size: 15px;
+                            position: absolute;
+                            left: 20px;
+                            top: 90px;
+                            line-height: 25px;
+                            background: transparent;
+                            text-align: center;
+                            color: #fff;">"I was lost in a cycle of addiction <br> and confusion, but Fresko
+                            helped <br> me find my way back. The <br> personalized mentoring and <br> faith-based solutions
+                            gave me <br> the strength to overcome my <br> struggles and reconnect with my <br> purpose. I’m
+                            now living a life of <br> peace and clarity, thanks to the <br> guidance I received here."</p>
+                    </div>
+                    <div style="height: 355px;
+                    width: 290px;
+                    background-color: #FFF7E3;
+                    position: absolute;
+                    right: 150px;
+                    border-radius: 32px;
+                    border: solid 2px;">
+                        <div style="display: inline-block;
+                            width: 55px;
+                            height: 55px;
+                            margin-top: 20px;
+                            margin-left: 30px;
+                            border-radius: 50%;
+                            overflow: hidden;">
+                            <img style="  height: 100%;  
+                            object-fit: cover;
+                            width: 100%;
+                            object-position: center;" src="mikku.JPG" alt="">
+                        </div>
+                        <p style="font-family: montserrat;
+                            font-weight: 600;
+                            font-size: 20px;
+                            position: absolute;
+                            left: 100px;
+                            top: 30px;
+                            background: transparent;">Mikdhad Daniel</p>
+                        <p style="font-family: montserrat;
+                            font-weight: 500;
+                            font-size: 10px;
+                            position: absolute;
+                            left: 95px;
+                            top: 50px;
+                            background: transparent;">Lecturer, University of Malaysia</p>
+                        <p style="font-family: montserrat;
+                            font-weight: 400;
+                            font-size: 15px;
+                            position: absolute;
+                            left: 17px;
+                            top: 90px;
+                            line-height: 25px;
+                            background: transparent;
+                            text-align: center;
+                            color: #000000;">  "Fresko changed my life in ways <br> I never imagined. Struggling with <br> addiction and feeling lost, I found <br> guidance here that was not only <br> practical but deeply rooted in my <br> faith. The mentors were <br> compassionate and helped me <br> rediscover hope and purpose." </p>
+                    </div>
+                </div>
+    
+            </div>
+    </section>
+    <div style="position: relative;
+    top: 2580px;" class="footer">
+        <img style="position: absolute;
+        top: 40px;
+        right: 45%;" src="yellowlogo.png" alt="">
+        <hr style="position: absolute;
+        top: 150px;
+        left: 118px;
+        width: 1280px;
+        color: #000;">
+        <p style="font-family: poppins;
+        font-size: 18px;
+        font-weight: 600;
+        color: #FFFFFF;
+        position: absolute;
+        top: 170px;
+        left: 140px;">Reach us</p>
+        <img style="position: absolute;
+        left: 140px;
+        top: 240px;" src="phoneno.png" alt="">
+        <p style="font-family: montserrat;
+        font-size: 15px;
+        font-weight: 400;
+        color: #FFFFFF;
+        position: absolute;
+        top: 230px;
+        left: 185px;">+91 7025908513</p>
+        <img style="position: absolute;
+        left: 140px;
+        top: 285px;" src="mail.png" alt="">
+        <p style="font-family: montserrat;
+        font-size: 15px;
+        font-weight: 400;
+        color: #FFFFFF;
+        position: absolute;
+        top: 273px;
+        left: 185px;">info@fresko.in</p>
+        <img style="position: absolute;
+        left: 140px;
+        top: 325px;" src="location.png" alt="">
+        <p style="font-family: montserrat;
+        font-size: 15px;
+        font-weight: 400;
+        color: #FFFFFF;
+        position: absolute;
+        top: 315px;
+        left: 185px;
+        line-height: 25px;">Fresko corporation, <br>
+            Perinthalmanna, Malappuram Dist. <br>
+            Kerala, India
+        </p>
+        <p style="font-family: poppins;
+        font-size: 18px;
+        font-weight: 600;
+        color: #FFFFFF;
+        position: absolute;
+        top: 170px;
+        left: 507px;
+        line-height: 25px;">Company</p>
+        <p style="font-family: poppins;
+        font-size: 15px;
+        font-weight: 400;
+        color: #FFFFFF;
+        position: absolute;
+        top: 222px;
+        left: 507px;
+        line-height: 25px;">About</p>
+        <p style="font-family: poppins;
+        font-size: 15px;
+        font-weight: 400;
+        color: #FFFFFF;
+        position: absolute;
+        top: 267px;
+        left: 507px;
+        line-height: 25px;">Contact</p>
+        <p style="font-family: poppins;
+        font-size: 15px;
+        font-weight: 400;
+        color: #FFFFFF;
+        position: absolute;
+        top: 308px;
+        left: 507px;
+        line-height: 25px;">Services</p>
+        <p style="font-family: poppins;
+        font-size: 18px;
+        font-weight: 600;
+        color: #FFFFFF;
+        position: absolute;
+        top: 170px;
+        left: 660px;
+        line-height: 25px;">Legal</p>
+        <p style="font-family: poppins;
+        font-size: 15px;
+        font-weight: 400;
+        color: #FFFFFF;
+        position: absolute;
+        top: 220px;
+        left: 660px;
+        line-height: 25px;">Privacy Policy</p>
+        <p style="font-family: poppins;
+        font-size: 15px;
+        font-weight: 400;
+        color: #FFFFFF;
+        position: absolute;
+        top: 265px;
+        left: 660px;
+        line-height: 25px;">Terms & Services</p>
+        <p style="font-family: poppins;
+        font-size: 15px;
+        font-weight: 400;
+        color: #FFFFFF;
+        position: absolute;
+        top: 310px;
+        left: 660px;
+        line-height: 25px;">Terms of Use</p>
+        <p style="font-family: poppins;
+        font-size: 18px;
+        font-weight: 600;
+        color: #FFFFFF;
+        position: absolute;
+        top: 170px;
+        left: 850px;
+        line-height: 25px;">Quick Links</p>
+        <p style="font-family: poppins;
+        font-size: 15px;
+        font-weight: 400;
+        color: #FFFFFF;
+        position: absolute;
+        top: 220px;
+        left: 850px;
+        line-height: 25px;">Mentors</p>
+        <p style="font-family: poppins;
+        font-size: 15px;
+        font-weight: 400;
+        color: #FFFFFF;
+        position: absolute;
+        top: 265px;
+        left: 850px;
+        line-height: 25px;">Downloads</p>
+        <p style="font-family: poppins;
+        font-size: 15px;
+        font-weight: 400;
+        color: #FFFFFF;
+        position: absolute;
+        top: 310px;
+        left: 850px;
+        line-height: 25px;">Forum</p>
+        <div class="subscription">
+            <p style="font-family: poppins;
+            font-size: 18px;
+            font-weight: 600;
+            position: absolute;
+            left: 20px;
+            color: #fff;">Join Our Newsletter</p>
+            <input style="
+            width: 180px;
+            position: absolute;
+            left: 10px;
+            top: 69px;
+            height: 39px;
+            border-radius: 5px;
+            border-color: #FEF6E2;
+            opacity: 0.5;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border: none;" type="text" id="inputID" name="inputName" placeholder="Your email address">
+            <button style="font-family: poppins;
+            font-weight: 500;
+            font-size: 12px;
+            position: absolute;
+            top: 69px;
+            right: 20px;
+            height: 41px;
+            width: 105px;
+            border: none;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            background-color: #7C6220;
+            color: #fff;
+            border-radius: 5px;">Subscribe</button>
+            <p style= " font-family: Manrope;
+            opacity: 0.6;
+            font-weight: 500;
+            font-size: 13px;
+            color: #fff;
+            position: absolute;
+            top: 115px;
+            left: 20px;
+            ">* Will send you weekly updates for your <br> better tool management.</p>
+        </div>
+    </div>
+    
+        
+    </div>
+
+
+
+    </div>
+     
+<script>
+    function addToTable() {
+      const category = document.getElementById("category").value;
+      const mentor = document.getElementById("mentor").value;
+      const date = document.getElementById("date").value;
+      const time = document.getElementById("time").value;
+
+      
+
+      const tableBody = document.getElementById("table-body");
+      const newRow = document.createElement("tr");
+
+      newRow.innerHTML = `
+        <td>${category}</td>
+        <td>${mentor}</td>
+        <td>${date} (${time})</td>
+        <td>Online</td>
+      `;
+
+      tableBody.appendChild(newRow);
+
+      // Reset the fields
+      document.getElementById("category").value = "";
+      document.getElementById("mentor").value = "";
+      document.getElementById("date").value = "";
+      document.getElementById("time").value = "";
+    }
+  </script>
+
+</body>
+
+</html>
