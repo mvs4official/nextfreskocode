@@ -1,0 +1,102 @@
+.meet-experts{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 27px;
+    text-align: center;
+}
+.our-mentors{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.outer-div{
+    height: 526.37px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+.mentor1{
+    height: 526.37px;
+    width: 248px;
+    display: inline-block;
+    max-width: 300px;
+}
+.mentor-profile1{
+    height: 452.14px;
+    width: 260px;
+    object-fit: cover;
+    object-position: center;
+}
+.mentor-name1{
+    height: 74.23px;
+    width: 260px;
+}
+.profile-pic1{
+    height: 452.14px;
+    width: 260px;
+}
+.javad{
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+.personal-trainer{
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+.follow-us{
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.vertical-line {
+    border-left: 1px solid black; 
+    opacity: 0.4;
+    height: 440px;              
+    position: absolute;         
+    top: 810px;                   
+    left: 50%;                  
+    align-items: center;
+}
+.dot-image{
+    position: absolute;
+    top: 900px;
+    left: 650px;
+    transition: 2s;
+    opacity: 0.2;
+}
+.dot-image:hover{
+    transform: rotate(-180deg);
+}
+.button:hover{
+    opacity: 0.8;
+}
+.button:active{
+    opacity: 0.5;
+}
+
+
+@media (max-width: 425px) {
+    .meet-experts{
+        text-align: center;
+    }
+    .outer-div{
+        margin: 0 auto; 
+        width: 60%; 
+        flex-direction: row;
+    }
+    .subscription{
+        margin-top: 200px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .fresko-service{
+        display: block;
+    }
+    
+}

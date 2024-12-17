@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    margin: 0;
+    left: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.page-container{
+    width: 100%;
+    height: 130vh;
+    background:url(pexels-pixabay-327540\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(35px);
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    
+}
+.page-container h3{
+    padding-top: 32px;
+    color: white;
+    font-family: poppins;
+    font-size: 30px;
+}
+.per{
+    color: white;
+    font-family: poppins;
+    font-size: 20px;
+}
+.f-row{
+   
+    margin-left: 10%;
+    height: 60vh;
+    width: 90%;
+    display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   
+}
+
+.over-container{
+    position: relative;
+}
+.our{
+    height: 217px;
+    position: absolute;
+  bottom: 6px;
+    width: 246px;
+    z-index: 11;
+    color: white;
+    font-size: 15px;
+    font-family: poppins;
+    opacity: 0;
+    margin-left: 5px;
+    
+}
+.over-view{
+    width: 270px;
+    height: 322px;
+    backdrop-filter: blur(35px);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.293);
+    justify-content: space-evenly;
+}
+.img-container{
+    margin-top: 60px;
+    width: 86px;
+    height: 86px;
+    background-color: white;
+    border-radius: 50%;
+}
+.over-view h2{
+    margin-bottom: 50px;
+    color: white;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+.s-row{
+    margin-left: 20%;
+    width: 70%;
+    margin-top: -10px;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+ 
+.f-row :hover h2{
+    color: rgb(0, 63, 0);
+    font-size: 25px;
+    transform: translateY(-160px); 
+    transition: 0.15s;
+    animation: opacity 1 0.30s;
+}
+/* .f-row :hover{
+    
+    
+} */
+.s-row :hover .img-container,
+.f-row :hover .img-container{
+   transform: translateY(-120px) ;
+   transition: 0.15s;
+   animation: opacity 1 0.30s;
+   
+}
+
+.s-row :nth-child(1):hover .our,
+.s-row :nth-child(2):hover .our,
+.f-row :hover .our{
+    animation: opacity 1 0.30s,up 1 0.20s;
+    opacity: 1;
+    
+}.s-row :nth-child(2):hover h2,
+.s-row :nth-child(1):hover h2{
+    color: rgb(0, 63, 0);
+    font-size: 25px;
+    transform: translateY(-160px); 
+    transition: 0.15s;
+    animation: opacity 1 0.30s;
+}
+/* .s-row:hover our{
+   
+
+} */
+@keyframes opacity{
+    0%{
+        filter: opacity(0);
+        
+    }
+    100%{
+        filter: opacity(1);
+    }
+} 
+@keyframes up {
+0%{
+    transform: translateY(50px);
+}
+100%{
+    transform: translateY(0);
+}
+}
+/* media */
+@media (max-width: 1024px) {
+    .f-row, .s-row {
+        justify-content: center; /* Center items */
+    }
+
+    .over-container {
+        width: 45%; /* Two columns on tablets */
+    }
+
+    h3 {
+        font-size: 2em; /* Reduce title size */
+    }
+
+    .per {
+        font-size: 1.1em; /* Adjust subtitle size */
+    }
+}
+
+/* Phones (768px and below) */
+@media (max-width: 768px) {
+    .f-row, .s-row {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .over-container {
+        width: 80%; /* Single column on small screens */
+        margin-top: 50px;
+        
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+
+    .per {
+        font-size: 1em;
+    }
+
+    .img-container {
+        width: 80px; /* Smaller image */
+        height: 80px;
+    }
+
+    h2 {
+        font-size: 1.4em; /* Reduce heading size */
+    }
+
+    .our {
+        font-size: 0.85em; /* Smaller description text */
+    }
+    .s-row{
+        visibility: hidden;
+    }
+}
+
+/* Small Phones (480px and below) */
+@media (max-width: 480px) {
+    .page-container {
+        padding: 10px; /* Reduce padding for narrow screens */
+    }
+
+    h3 {
+        font-size: 1.5em; /* Smaller title */
+    }
+
+    .per {
+        font-size: 0.9em; /* Adjust subtitle size */
+    }
+
+    .img-container {
+        width: 70px; /* Smaller image */
+        height: 70px;
+    }
+
+    h2 {
+        font-size: 1.2em; /* Adjust heading size */
+    }
+
+    .our {
+        font-size: 0.8em; /* Further reduce description size */
+    }
+    .s-row{
+        visibility: hidden;
+    }
+}
