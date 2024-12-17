@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@100..900&family=Poppins:wght@100..900&display=swap');
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Montserrat, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #FFF0C8;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #477a25;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    right: 30px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.menu-toggle {
+    visibility: hidden;
+}
+
+.logo img {
+    height: 92px;
+    position: relative;
+    bottom: 24px;
+}
+
+.logo {
+    height: 35px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        padding: 15px 30px;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        visibility: hidden;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 10px;
+        margin-top: 10px;
+        background: #FFF0C8;
+        border-top: 1px solid #ccc;
+        padding-top: 10px;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        font-size: 0.875rem;
+    }
+
+    .menu-toggle {
+        visibility: visible;
+    }
+}
+
+
+.a-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #FFF0C8;
+}
+
+.a-main .vertical-line {
+    display: none;
+}
+
+.text {
+    max-width: 90%;
+}
+
+.heading {
+    color: #0D8241;
+    font-size: 32px;
+    font-family: 'Abril Fatface';
+}
+
+.paragraph {
+    color: #0D8241;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.section-2 {
+    background-color: #FFF7E3;
+    padding: 20px;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.box-container>div {
+    width: 222px;
+    max-width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.div-1 {
+    background-image: url('image/Rectangle 8.png');
+}
+
+.div-2 {
+    background-image: url('image/Rectangle 86.png');
+}
+
+.div-3 {
+    background-image: url('image/Rectangle 87.png');
+}
+
+.box-container h5 {
+    color: white;
+    margin-bottom: 10px;
+    font-family: Manrope, sans-serif;
+    font-size: 20px;
+}
+
+.box-container p {
+    color: white;
+    font-size: 13px;
+    font-family: Poppins, sans-serif;
+}
+
+.box-container button {
+    color: white;
+    background-color: #15897E;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.testimonials {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    position: relative;
+    left: 120px;
+    width: 85%;
+    margin-bottom: 200px;
+    height: 300px;
+}
+
+.testimonial-box1 h6 {
+    font-size: 18px;
+    color: #0D8241;
+    font-weight: 500;
+}
+
+.testimonial-box1 p {
+    font-size: 31px;
+    color: #0D8241;
+    font-weight: 700;
+}
+
+.testimonial-box1 {
+    max-width: 500px;
+}
+
+.testimonial-box2 {
+    width: 22%;
+    height: 100%;
+    background-color: #15897E;
+    border-radius: 30px;
+}
+
+.testimonial-box3 {
+    width: 25%;
+    height: 100%;
+    background-color: transparent;
+    border: 4px solid white;
+    border-radius: 30px;
+}
+
+.testimonial-box {
+    margin-top: 20px;
+    background-color: #15897E;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .a-main {
+        flex-direction: row;
+        text-align: left;
+        padding-left: 150px;
+        padding-right: 100px;
+    }
+
+    .a-main .vertical-line {
+        display: block;
+        width: 2px;
+        height: 150px;
+        background: #0D8241;
+        margin-right: 20px;
+    }
+
+    .box-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 0;
+    }
+
+    .box-container>div {
+        max-width: 25%;
+    }
+}
+
+.heading {
+    margin: 0;
+    height: 8%;
+}
+
+.services {
+    margin: 0;
+    font-family: Montserrat;
+    color: #0D8241;
+    font-weight: 400;
+    font-size: 19px;
+    text-align: center;
+}
+
+.paragraph-2 {
+    margin: 0;
+    color: #0D8241;
+    margin-top: 10px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.Leaf {
+    position: relative;
+    bottom: 140px;
+    left: 300px;
+
+}
+
+.name-kooria img {
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+.name-kooria {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.name-kooria img {
+    height: 55px;
+}
+
+.name-kooria div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.Anshid h6 {
+    margin: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.Anshid p {
+    position: relative;
+    margin: 0;
+    bottom: 15px;
+    font-size: 10px;
+    color: black;
+}
+
+.paragraph-kooria {
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    font-size: 15px;
+    width: 258px;   
+    margin: 7px;
+    position: relative;
+    bottom: 10px;
+}
+
+.paragraph-kooria p {
+    color: #FCFFFD;
+    line-height: 21.5px;
+    position: relative;
+    bottom: 20px;
+    color: #FCFFFD;
+
+}
+
+.name-manjeri img {
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+.name-manjeri {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.name-manjeri img {
+    height: 55px;
+}
+
+.name-manjeri div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.mikdad h6 {
+    margin: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.mikdad p {
+    position: relative;
+    margin: 0;
+    bottom: 15px;
+    font-size: 10px;
+    color: black;
+}
+
+.paragraph-manjeri {
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    font-size: 15px;
+    width: 258px;
+    margin: 7px;
+    position: relative;
+    left: 30px;
+    bottom: 10px;
+}
+
+.paragraph-manjeri p {
+    color: #0D8241;
+    line-height: 20.5px;
+    position: relative;
+    bottom: 22px;
+    font-weight: 500;
+}
+
+.footer {
+    height: 470px;
+    width: 100%;
+    background-color: #41391D;
+    margin-top: 0px;
+    position: relative;
+}
+
+.subscription {
+    position: absolute;
+    top: 180px;
+    right: 120px;
+    background-color: #685E37;
+    width: 304px;
+    height: 184px;
+    border-radius: 7px;
+}
+
+@media (max-width:480px) {
+    .testimonials {
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        /* align-items: center; */
+        align-content: center;
+        /* right: 39px; */
+        position: relative;
+        left: 33px;
+    }
+    .testimonial-box1 p {
+        font-size: 20px;
+        position: relative;
+        top: 20px;
+    }
+    
+    nav a {
+        transition: all 0.15s;
+    }
+    
+    nav a:hover {
+        color: #0D8241;
+        transform: scale(1.1);
+        font-weight: 500;
+    }
+    .testimonial-box1 h6{
+        font-size: 24px;
+        color: #0D8241;
+        font-weight: 500;
+        position: relative;
+        top: 50px;
+    }
+    .testimonial-box2{
+        width: 95%;
+    }
+    .testimonial-box3{
+        width: 90%;
+    }
+}
+
+

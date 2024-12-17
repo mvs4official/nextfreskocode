@@ -1,0 +1,130 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* navigation bar */
+
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FFF7E3;
+}
+nav a{
+  transition: all 0.15s;
+}
+nav a:hover{
+  color: #0D8241;
+  transform: scale(1.1);
+  font-weight: 500;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+  height: 40px;
+}
+
+header nav{ 
+display:flex;
+gap: 45px;
+}
+
+header nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.logo-image {
+  height: 100px;
+  width: auto;
+}
+
+.terms-big{
+  background-color: rgba(106, 156, 103, 0.30);
+  text-align: center;
+  height: 140px;
+  width: 100%;
+}
+
+.Terms-and-Conditions h2{
+margin: 0 auto;
+padding-top:30px ;
+}
+
+.our-mission p{
+  margin: 0 auto;
+  padding-top:20px ;
+  font-weight: 500;
+}
+
+.terms-small{
+  text-align: center;
+  height: 40px;
+  background-color: #5C6353;
+
+  
+}
+.terms-small p{
+  margin: 0 auto;
+  padding-top: 10px;
+  color: white;
+  font-size: 16px;
+
+}
+
+.main-text{
+  margin-left: 90px;
+  margin-top: 90px;
+}
+
+.terms-container {
+  width: 60%;
+  color: rgba(0, 0, 0, 1);
+  padding: 20px;
+  font: 500 20px Poppins, sans-serif;
+}
+
+.section-title {
+  font-size: 25px;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.subsection-title {
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: 550;
+}
+
+.text-content {
+  font-family: Montserrat, sans-serif;
+  line-height: 35px;
+  font-size: 17px;
+}
+
+.list-content {
+  margin: 10px 0;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.wishes{
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 150px;
+}
+

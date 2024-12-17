@@ -1,0 +1,79 @@
+@media (max-width: 1490px) {
+  .terms-container{width: 70%;} 
+  .main-text{
+    margin-left: 80px;
+  
+  }
+  
+
+}
+
+
+
+@media (max-width: 1340px) {
+  .terms-container{width: 80%;} 
+
+  .main-text{
+    margin-left: 70px;
+  
+  }
+  
+}
+
+
+@media (max-width: 991px) {
+  /* .terms-container {
+    max-width: 100%;
+    
+  } */
+
+  .main-text{
+    margin-left: 60px;
+  
+  }
+  
+}
+
+@media (max-width: 786px) {
+body {
+  overflow-x: hidden;
+}
+ 
+  .section-title {
+    font-size: 20px;
+  }
+
+
+  .subsection-title {
+    font-size: 17px;
+  }
+
+  .text-content {
+    line-height: 23px;
+    font-size: 13px;
+  }
+  .main-text{
+    margin-left: 3px;
+  
+  }
+
+  .terms-container{width: 95%;} 
+  
+
+  .terms-small p{
+
+    font-size: 11px;
+  
+  }
+
+  .our-mission  p{
+    font-size: 15px;
+  }
+
+  .Terms-and-Conditions h2{
+    font-size: 23px;
+  }
+  .wishes{
+    font-size: 18px;
+  }
+}
